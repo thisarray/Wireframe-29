@@ -22,9 +22,9 @@ body {
 
 <body>
 <section id="imageLoader" class="hidden">
-  <img class="hidden" src="images/background.png" alt="background">
-  <img class="hidden" src="images/player_down.png" alt="player_down">
-  <img class="hidden" src="images/player_up.png" alt="player_up">
+  <img class="hidden" src="images/background.png" alt="background" data-name="background">
+  <img class="hidden" src="images/player_down.png" alt="player_down" data-name="player_down">
+  <img class="hidden" src="images/player_up.png" alt="player_up" data-name="player_up">
 </section>
 
 <main>
@@ -157,12 +157,12 @@ HEIGHT = 600;
 
 // pipes are dark dreen, move 2 pixels per frame and
 // have a gap of 150 pixels between top and bottom pipes
-PIPE_COLOUR = [38, 155, 29];
-PIPE_SPEED = 2;
-PIPE_GAP = 150;
+const PIPE_COLOUR = [38, 155, 29];
+const PIPE_SPEED = 2;
+const PIPE_GAP = 150;
 
 // vertical acceleration
-GRAVITY = 0.2;
+const GRAVITY = 0.2;
 
 var top_pipes, bottom_pipes, player, playing;
 
