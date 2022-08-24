@@ -40,11 +40,11 @@ The game screen appears here if your browser supports the Canvas API.
 
 <h2>Attribution</h2>
 
-<p><a href="https://wireframe.raspberrypi.org/issues/29">Source Code: Recreate Flappy Bird's flight mechanic, pages 40-41, by Rik Cross</a>.</p>
+<p><a href="https://wireframe.raspberrypi.com/issues/29">Source Code: Recreate Flappy Bird's flight mechanic, pages 40-41, by Rik Cross</a>.</p>
 
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a>.</p>
 
-<p><a href="https://www.raspberrypi.org/blog/recreate-flappy-birds-flight-mechanic-wireframe-29/">Blog post of Source Code</a>.</p>
+<p><a href="https://www.raspberrypi.com/news/recreate-flappy-birds-flight-mechanic-wireframe-29/">Blog post of Source Code</a>.</p>
 
 <h2>Original Python code</h2>
 
@@ -294,9 +294,7 @@ function draw() {
 }
 
 window.addEventListener('load', (event) => {
-  images.LOAD('#imageLoader img');
-  reset();
-  screen.set_mode('#screen', '#reset', '#pause');
+  screen.init();
 });
 </script>
 </body>
